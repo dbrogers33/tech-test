@@ -10,7 +10,7 @@
       <p>During this quiz, we ask you certain questions pertaining to the mechanic work you may experience in on of our shops. Please read and answer each quesiton completely. Thank you for your interest.</p>
     </div>
     <hr>
-    <form action="thank-you.php" method="POST">
+    <form action="thank-you" method="POST">
       <!-- Question 1 -->
       <div class="row form-group">
         <h3>1. What is your first and last name?</h3>
@@ -111,7 +111,7 @@
 
       <!-- Question 8 -->
       <div class="row form-group">
-        <h3>8. The purpose of la hydraulic pump is to 'blank' in a hydraulic system.</h3>
+        <h3>8. The purpose of a hydraulic pump is to _______ in a hydraulic system.</h3>
         <div class="radio">
           <label><input type="radio" name="question8" value="1" required> Stop Flow</label>
         </div>
