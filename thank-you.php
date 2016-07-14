@@ -206,7 +206,7 @@ $graded = "INSERT INTO grades (name, email, grade)
 VALUES ('$name', '$email', $finalGrade)";
 
 if ($conn->query($graded) === TRUE) {
-  echo '<div class="response container">All is good</h3></div><br>';
+  //echo '<div class="response container">All is good</h3></div><br>';
 } else {
   echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }
@@ -215,7 +215,8 @@ $sql = "INSERT INTO techtest (name, email, question_one, question_two, question_
 VALUES ('$name', '$email', $answerOne, $answerTwo, $answerThree, $answerFour, $answerFive, $answerSix, $answerSeven, $answerEight, $answerNine, $answerTen, $answerEleven, $answerTwelve, $answerThirteen, $answerFourteen, $answerFifteen, $answerSixteen, $answerSeventeen, $answerEighteen, $answerNineteen, $answerTwenty, $answerTwentyone, $answerTwentytwo, $answerTwentythree)";
 
 if ($conn->query($sql) === TRUE) {
-  echo '<div class="response container"><h3>Thank you for taking our test, '.$name.'</h3></div><br>';
+  echo '<div class="container"><div class="row"><div class="col-lg-4 col-lg-offset-4 col-xs-12"><img src="imgs/Hutson-Logo-Square.png" class="img-responsive"/></div></div>';
+  echo '<div class="row"><div class="col-md-12"><h3 class="text-center">Thank you for taking our test, '.$name.'</h3></div></div></div><br>';
 } else {
   echo "<br>Error: " . $sql . "<br>" . $conn->error;
 }

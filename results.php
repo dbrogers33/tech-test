@@ -2,7 +2,7 @@
 require "connection/connect.php";
 require "includes/header.php";
 
-$sql = "SELECT time, name, email, grade FROM grades";
+$sql = "SELECT time, name, email, grade FROM grades ORDER BY time DESC";
 $result = $conn->query($sql);
 ?>
 
